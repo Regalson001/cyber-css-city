@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A futuristic isometric cyberpunk city and animated traffic simulator built entirely with HTML and CSS.">
+  <meta name="author" content="Stephen Oyugi">
+  <meta name="theme-color" content="#070914">
+
+  <title>Cyber CSS City | Isometric Traffic Simulator</title>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main class="app">
+
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Cyber CSS City home">
+        <span class="brand-mark">C</span>
+        <span>CYBER<span class="brand-accent">CITY</span></span>
+      </a>
+
+      <div class="system-status">
+        <span class="status-light"></span>
+        CITY SIMULATION ACTIVE
+      </div>
+
+      <a class="top-link" href="#about">SYSTEM INFO <span>↗</span></a>
+    </header>
+
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span></span> CSS EXPERIMENT / 001</p>
+        <h1 id="page-title">NEON<br><span>METROPOLIS</span></h1>
+        <p class="intro-description">
+          A living cyberpunk city constructed with HTML elements,
+          CSS 3D transforms, neon lighting and animated traffic.
+        </p>
+
+        <div class="intro-tags">
+          <span>PURE CSS</span>
+          <span>ISOMETRIC 3D</span>
+          <span>ANIMATED TRAFFIC</span>
+        </div>
+      </div>
+
+      <div class="city-readout">
+        <div class="readout-item">
+          <span class="readout-label">CITY STATUS</span>
+          <strong><span class="status-light"></span> OPERATIONAL</strong>
+        </div>
+        <div class="readout-item">
+          <span class="readout-label">TRAFFIC NETWORK</span>
+          <strong>LIVE SIMULATION</strong>
+        </div>
+        <div class="readout-item">
+          <span class="readout-label">ENVIRONMENT</span>
+          <strong>NIGHT / NEON</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="simulation" aria-label="Isometric cyberpunk city simulation">
+
+      <div class="simulation-heading">
+        <div>
+          <p class="eyebrow">01 / THE CITY GRID</p>
+          <h2>Urban infrastructure</h2>
+        </div>
+        <span class="simulation-label">3D ENVIRONMENT</span>
+      </div>
+
+      <div class="viewport">
+        <div class="stars" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i>
+        </div>
+
+        <div class="city-stage">
+          <div class="city-ground">
+
+            <div class="city-grid"></div>
+
+            <!-- Roads -->
+            <div class="road road-horizontal">
+              <span class="road-line"></span>
+              <span class="road-line"></span>
+              <span class="road-edge"></span>
+            </div>
+
+            <div class="road road-vertical">
+              <span class="road-line"></span>
+              <span class="road-line"></span>
+              <span class="road-edge"></span>
+            </div>
+
+            <!-- Traffic -->
+            <div class="traffic traffic-horizontal">
+              <span class="vehicle vehicle-blue"></span>
+              <span class="vehicle vehicle-pink"></span>
+              <span class="vehicle vehicle-yellow"></span>
+            </div>
+
+            <div class="traffic traffic-vertical">
+              <span class="vehicle vehicle-green"></span>
+              <span class="vehicle vehicle-purple"></span>
+            </div>
+
+            <!-- Building 1 -->
+            <div class="building building-one">
+              <div class="building-cube">
+                <div class="face front">
+                  <div class="windows">
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+                  <span class="building-sign">NOVA</span>
+                </div>
+                <div class="face side">
+                  <div class="side-windows">
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+                </div>
+                <div class="face top"></div>
+              </div>
+              <span class="building-glow"></span>
+            </div>
+
+            <!-- Building 2 -->
+            <div class="building building-two">
+              <div class="building-cube">
+                <div class="face front">
+                  <div class="windows">
+                    <i></i><i></i><i></i>
+                    <i></i><i></i><i></i>
+                    <i></i><i></i><i></i>
+                    <i></i><i></i><i></i>
+                  </div>
+                  <span class="building-sign">01</span>
+                </div>
+                <div class="face side">
+                  <div class="side-windows">
+                    <i></i><i></i><i></i>
+                    <i></i><i></i><i></i>
+                    <i></i><i></i><i></i>
+                  </div>
+                </div>
+                <div class="face top"></div>
+              </div>
+              <span class="building-glow"></span>
+            </div>
+
+            <!-- Building 3 -->
+            <div class="building building-three">
+              <div class="building-cube">
+                <div class="face front">
+                  <div class="windows">
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+                  <span class="building-sign">CYBER</span>
+                </div>
+                <div class="face side">
+                  <div class="side-windows">
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+                </div>
+                <div class="face top"></div>
+              </div>
+              <span class="building-glow"></span>
+            </div>
+
+            <!-- Building 4 -->
+            <div class="building building-four">
+              <div class="building-cube">
+                <div class="face front">
+                  <div class="windows">
+                    <i></i><i></i><i></i>
+                    <i></i><i></i><i></i>
+                    <i></i><i></i><i></i>
+                  </div>
+                  <span class="building-sign">ZEN</span>
+                </div>
+                <div class="face side">
+                  <div class="side-windows">
+                    <i></i><i></i><i></i>
+                    <i></i><i></i><i></i>
+                    <i></i><i></i><i></i>
+                  </div>
+                </div>
+                <div class="face top"></div>
+              </div>
+              <span class="building-glow"></span>
+            </div>
+
+            <!-- Building 5 -->
+            <div class="building building-five">
+              <div class="building-cube">
+                <div class="face front">
+                  <div class="windows">
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+                  <span class="building-sign">PIXEL</span>
+                </div>
+                <div class="face side">
+                  <div class="side-windows">
+                    <i></i><i></i><i></i>
+                    <i></i><i></i><i></i>
+                    <i></i><i></i><i></i>
+                  </div>
+                </div>
+                <div class="face top"></div>
+              </div>
+              <span class="building-glow"></span>
+            </div>
+
+            <!-- Street lights -->
+            <div class="streetlamp lamp-one">
+              <span class="lamp-pole"></span>
+              <span class="lamp-light"></span>
+            </div>
+
+            <div class="streetlamp lamp-two">
+              <span class="lamp-pole"></span>
+              <span class="lamp-light"></span>
+            </div>
+
+            <div class="streetlamp lamp-three">
+              <span class="lamp-pole"></span>
+              <span class="lamp-light"></span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="viewport-caption">
+          <span>FIG 001 — ISOMETRIC CITY MODEL</span>
+          <span>HTML / CSS ONLY</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard" aria-label="City simulation details">
+      <article class="dashboard-card">
+        <span class="card-index">01</span>
+        <p class="card-label">ARCHITECTURE</p>
+        <h3>5 <span>structures</span></h3>
+        <p class="card-description">Layered 3D building geometry.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <span class="card-index">02</span>
+        <p class="card-label">TRANSPORT</p>
+        <h3>5 <span>vehicles</span></h3>
+        <p class="card-description">Looping CSS traffic animations.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <span class="card-index">03</span>
+        <p class="card-label">LIGHTING</p>
+        <h3>NEON <span>system</span></h3>
+        <p class="card-description">Glowing windows and street lamps.</p>
+      </article>
+
+      <article class="dashboard-card">
+        <span class="card-index">04</span>
+        <p class="card-label">RENDER ENGINE</p>
+        <h3>CSS <span>3D</span></h3>
+        <p class="card-description">Transforms and preserved 3D space.</p>
+      </article>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">02 / ENGINEERING NOTES</p>
+        <h2>Built in layers.<br><span>Powered by CSS.</span></h2>
+      </div>
+
+      <p class="about-description">
+        This experiment explores how flat HTML elements can be arranged
+        into an isometric environment using 3D transforms, layered faces,
+        CSS variables, keyframes and carefully controlled perspective.
+        The city is a visual demonstration, not a real traffic simulation.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <a class="brand" href="#">
+        <span class="brand-mark">C</span>
+        <span>CYBER<span class="brand-accent">CITY</span></span>
+      </a>
+
+      <p>Designed and developed by <strong>Stephen Oyugi</strong></p>
+      <p>HTML5 · CSS3 · 3D TRANSFORMS</p>
+    </footer>
+
+  </main>
+</body>
+</html>
